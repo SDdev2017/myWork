@@ -1,0 +1,555 @@
+*
+{
+    font-family: sans-serif;
+}
+
+html, body
+{
+    padding: 0;
+    margin: 0;
+    
+}
+
+#wallpaper
+{
+    width: 100%;
+    height: 500px;
+    background: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#container
+{
+    position: relative;
+    left: 50%;
+    top: 240px;
+    color: rgba(255,255,255,0.8);
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 26, 0.5);
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    opacity: 0;
+}
+
+#label
+{  
+    font-size: 40px;
+    border-bottom: 3px solid rgba(255,255,255,0.8);
+    padding: 10px 20px;
+}
+
+#sub-label
+{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 19px;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+#navbar a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 26);
+    font-size: 16px;
+    padding: 5px 3px;
+    border-radius: 4px;
+    transition: 0.4s background-color;
+}
+
+#navbar a:not(:first-child)
+{
+    margin-left: 10px;
+}
+
+#navbar a:hover
+{
+    background-color: rgba(217, 217, 217, 0.5);
+}
+
+#navbar
+{
+    padding: 10px 30px;
+    font-family: sans-serif;
+}
+
+@keyframes nav-anim
+{
+    from
+    {
+        margin-top: -50px;
+    }
+    to
+    {
+        margin-top: 0px;
+    }
+}
+
+.sticky
+{
+    position: fixed;
+    top: 0px;
+    margin-top: 0px;
+    animation-name: nav-anim;
+    animation-duration: 1s;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0px 4px 8px rgba(0,0,0, 0.5);
+    transition: 0.5s top;
+    z-index: 99;
+}
+
+#navbar i
+{
+    margin-right: 4px;
+}
+
+#about
+{
+   color: rgba(0, 0, 26, 0.8);
+   font-family: sans-serif;
+   font-size: 15px;
+}
+
+#about h1
+{
+    text-align: center;
+    padding: 30px 0 50px;
+}
+
+#about-container
+{
+    width: 70%;
+    margin: 0px auto;
+}
+
+#about-text
+{
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+#about-container img
+{
+    
+}
+
+#about-skills
+{
+    float: right;
+    width: 70%;
+}
+
+#about-skills h2
+{
+    text-align: center;
+    margin-top: 0;
+}
+
+#progress-container
+{
+    width: 70%;
+    margin: 30px auto 0;
+}
+
+.progress-bar
+{
+    height: 20px;
+    background-color: rgb(0, 0, 26);
+    color: white !important;
+    text-align: center;
+}
+
+#projects
+{
+    color: rgba(0, 0, 26, 0.9);
+    font-family: sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#projects #poster
+{
+    padding: 20px 0px;
+    width: 100%;
+    background-color: rgba(0,0,26, 0.8);
+    color: rgba(255,255,255,0.7);
+}
+
+.poster-item
+{
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+}
+
+#project-wallpaper
+{
+    height: 300px;
+    background: url(project-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(50%);
+    text-align: center;
+    
+}
+
+#project-wallpaper div
+{
+    color: white;    
+    background-color: rgba(0,0,26,0.8);
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;   
+    font-size: 17px;
+   
+}
+
+#project-wallpaper div h1
+{
+    margin: 0px;
+    position: relative;
+    top: 110px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 2px;
+        
+}
+
+.project-site
+{
+    width: 25%;
+    padding: 15px; 
+    margin-top: 20px;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.project-site h3,h4
+{
+    text-align: center;
+}
+
+.project-site p
+{
+    padding-left: 30px;
+}
+
+.project-site p i
+{
+    margin-right: 12px;
+}
+
+.overlay-img
+{
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.6s opacity;
+}
+
+.overlay-img:hover
+{
+    opacity: 1;
+}
+
+#contacts
+{
+    color: rgba(0, 0, 26, 0.9);
+    font-family: sans-serif;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(230, 230, 230);
+}
+
+#contacts h1
+{
+    text-align: center;
+}
+
+#location
+{
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 60px;
+    display: inline-block;
+    float: left;
+}
+
+#location i
+{
+    font-size: 19px;
+    margin-right: 25px;
+    
+}
+
+#form-feedback
+{
+    display: inline-block;
+}
+
+#form-feedback input
+{
+    transition: .5s;
+    width: 400px;
+    height: 38px;
+    font-size: 19px;
+    border: 2px solid #999999;
+    padding-left: 5px;
+}
+
+#form-feedback input:focus
+{
+    border: 3px solid rgb(0,0,26);
+    outline: none;
+}
+
+#form-feedback button
+{
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0,0,26);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+#form-feedback button:hover
+{
+    opacity: 0.5;
+}
+
+#contacts-outer
+{
+    width: 70%;
+    margin: 50px auto 0;
+}
+
+footer
+{
+    padding: 30px 0px 0px;
+    background-color: #ff751a;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    position: relative;
+}
+
+footer a
+{
+     color: rgba(255,255,255,0.8);
+     transition: 0.6s;
+     text-decoration: none;
+}
+
+footer i
+{
+    font-size: 25px;   
+}
+
+footer a:not(:first-child)
+{
+    margin-left: 14px;
+}
+
+footer a:hover
+{
+    opacity: 0.4;
+}
+
+.tooltip
+{
+    
+}
+
+.tooltip-text
+{
+    background-color: rgba(0,0,0,0.8);
+    font-size: 14px;
+    position: absolute;
+    top: 29px;
+    padding: 4px 7px;
+    border-radius: 5px;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s opacity;
+    margin-left: 4px;
+    transition-delay: 1s;
+}
+
+footer a:hover + .tooltip-text
+{
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.mob-menu-icon
+{
+    font-size: 25px;
+    color: rgb(0,0,26);
+    background-color: rgba(255,255,255,0.6);
+    display: none;
+    padding: 5px;
+    border-radius: 5px;
+    float: left;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.fa-times
+{
+    display: none !important;
+}
+
+@media only screen and (max-width : 495px)
+{
+    @keyframes show-menu
+    {
+        from
+        {
+            display: none;
+            left: -150px;
+        }
+        
+        to
+        {
+            display: block;
+            left: 0px;
+        }
+    }
+    
+    body,html
+    {
+        overflow-x: hidden;
+    }
+    
+    #navbar
+    {
+        display: none;
+        background-color: rgba(0,0,26,1);
+        position: absolute;
+        animation-name: show-menu;
+        animation-duration: 1s;
+        height: 100vh;
+        top:0;
+        z-index: 1000;
+        padding: 60px 80px 60px 30px;
+        box-shadow: 0px 5px 6px rgba(0,0,0,0.5);
+    }
+    
+    .fa-times
+    {
+        color: aliceblue;
+        position: relative;
+        bottom: 40px;
+        left: 170px;
+        font-size: 22px;
+        cursor: pointer;
+        display: inline-block !important;
+    }
+    
+    #navbar a
+    {
+         color: aliceblue !important;
+         display: block;
+         margin-bottom: 20px;
+    }
+    
+    #navbar a:first-child
+    {
+        margin-left: 10px;
+    }
+    
+    #navbar a i
+    {
+        margin-right: 12px;
+    }
+    
+    .mob-menu-icon
+    {
+        display: inline-block;
+    }
+    
+    #about-text
+    {
+        line-height: 2;
+    }
+    
+    #about-container img
+    {
+        width: 100%;
+    }
+    
+    #about-skills
+    {
+        width: 100%;
+        float: none;
+        margin-top: 30px;
+    }
+    
+    #progress-container
+    {
+        width: 100%;
+    }
+    
+    #poster .poster-item
+    {
+        width: 100%;
+        display: block;
+    }
+    
+    .project-site
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    
+    #location
+    {
+        width: 55%;
+        margin: 60px auto;
+        display: block;
+        float: none;
+    }
+    
+    #contacts-outer
+    {
+        padding: 0;
+        width: 100%;
+    }
+    
+    #form-feedback
+    {
+        display: block;
+        text-align: center;
+    }
+    
+    #form-feedback input
+    {
+        width: 80%;
+        margin: 0px auto;
+    }
+    
+    #form-feedback p
+    {
+        text-align: left !important;
+        width: 70%;
+        margin-left: 45px;
+    }
+}
