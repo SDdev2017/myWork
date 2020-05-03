@@ -1,0 +1,37 @@
+@media only screen and (max-width: 768px)
+{
+    .main-movie-poster
+    {
+        display: none;
+    }
+    
+    .main-movie-trailer iframe
+    {
+        width: 400px !important;
+        height: 300px !important;
+    }
+}
+
+@media only screen and (max-width: 414px)
+{
+    .main-movie-trailer iframe
+    {
+        width: 100% !important;
+        height: 300px !important;
+    }
+    
+    .movie-list
+    {
+        flex-direction: column;
+    }
+    
+    .movie
+    {
+        width: 100%;
+    }
+    
+    .main-movie ul li
+    {
+        padding: 0px;
+    }
+}
