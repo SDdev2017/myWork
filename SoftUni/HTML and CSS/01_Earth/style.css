@@ -1,0 +1,98 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 20px 0px;
+}
+
+.page-wrapper
+{
+    width: 570px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+header
+{
+    background-color: black;
+    padding: 15px 8px 8px;
+}
+
+header h1
+{
+    margin: 0px;
+    color: #00f2ff;
+}
+
+header h3
+{
+    color: #e5efff;
+    margin: 0;
+    letter-spacing: 1.6px;
+}
+
+main
+{
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.planet-card
+{
+    border: 1px solid #ccc;
+    
+    position: relative;
+    padding: 5px;
+}
+
+.planet-card img
+{
+    width: 190px;
+}
+
+.planet-card p
+{
+    margin: 0;
+    font-size: 15px;
+}
+
+.about-earth
+{
+   padding-left: 20px;
+   line-height: 1.6;
+}
+
+footer h2
+{
+    background-color: #001118;
+    color: #feffff;
+    font-size: 19px;
+    display: inline-block;
+    padding: 5px;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
+footer article
+{
+    background-color: #d9ebeb;
+    padding: 15px 8px;
+}
+
+footer p
+{
+    margin: 0;
+}
